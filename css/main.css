@@ -99,11 +99,22 @@ footer {
 
 /* Header styles */
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -111,14 +122,33 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 /* Footer styles */
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
 
 footer .social-icons {
   display: flex;
@@ -132,7 +162,15 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright {
+  margin: 20px;
+}
+
 /* --------------- MOBILE STYLES - HOMEPAGE --------------- */
+
+.content-wrapper {
+  width: 90%;
+}
 
 /* Hero Area */
 
@@ -157,6 +195,16 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 20px;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -164,6 +212,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 20px 80px 65px 20px;
+}
+
+.features p {
+  margin: 0;
 }
 
 /* Reviews */
@@ -174,6 +227,14 @@ aside {
   flex-flow: row wrap;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
 
 /* --------------- MOBILE STYLES - ABOUT --------------- */
 
