@@ -98,6 +98,7 @@ textarea {
    ========================================================================== */
 
 /* General Styles */
+
  
 html {
 	font-size: 16px;
@@ -148,6 +149,14 @@ address {
   margin: 50px 0;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -165,6 +174,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,6 +255,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -292,6 +313,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -494,7 +518,7 @@ input[type=button] {
     line-height: 1.333;
 }
 
-h3 {
+  h3 {
     font-size: 1.5em;
     line-height: 1.25;
 }
@@ -526,6 +550,10 @@ h3 {
     display: none;
   }
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   .hero-area h1 {
     font-size: 3em;
@@ -575,6 +603,7 @@ h3 {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
